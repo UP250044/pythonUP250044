@@ -1,4 +1,4 @@
-#Día 5: 30 días de programación en Python
+# /// Día 5: 30 días de programación en Python
 
 Datos="""
 -------- EJERCICIOS DEL DIA NUMERO 5  --------
