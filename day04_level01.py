@@ -1,297 +1,222 @@
-#Día 4: 30 días de programación en Python
+"""
+# ================================================================
+# 🚨 Reglas de la evaluación (LEER ANTES DE COMENZAR)
+# ================================================================
+# - La evaluación debe realizarse de forma individual.
+# - Está estrictamente prohibido el plagio:
+#     - No copies código de otros compañeros.
+#     - No busques soluciones en internet.
+#     - No uses IA como ChatGPT, Copilot u otras herramientas externas.
+# - Solo puedes tener abierto:
+#     - Este archivo en Codespaces (VS Code en el navegador)
+#     - El repositorio de GitHub de esta tarea.
+# - Si se detecta copia o incumplimiento de estas reglas,
+#   la calificación será cero.
+# ================================================================
 
-Datos="""
--------- EJERCICIOS DEL DIA NUMERO 4  --------
-  Nombre: Damian Ezequiel Solis Rodriguez
-  Fecha: 02/05/2025
-  Materia: Progremacion Estructurada
-  Unidad: U2
-----------------------------------------------
+# Ingresa el número del ejercicio que deseas ejecutar (del 1 al 10):
+ejercicio = input().strip()
+
+# --- Ejercicio 1 ---
+if ejercicio == "1":
+    # Imprime una línea de saludo usando concatenación de strings.
+    # Debe decir exactamente: ¡Bienvenido, estudiante de Python!
+    parte1 = "¡Bienvenido"
+    parte2 = "estudiante de Python!"
+    
+    print(f"concatenación de strings: {parte1+parte2}")
+    pass
+
+# --- Ejercicio 2 ---
+elif ejercicio == "2":
+    # Calcula el cuadrado de la suma de 3 y 5.
+    # Resultado esperado: 64
+    a = 3
+    b = 5
+    Cuadrado=((a+b)**2)
+    print(f"Resultado eperado: {cuadrado}")
+    pass
+
+# --- Ejercicio 3 ---
+elif ejercicio == "3":
+    # Convierte el texto "3.14" a tipo float y súmale 2.86
+    # Resultado esperado: 6.0
+    texto = "3.14"
+    texto_dos=float(texto)
+    suma = (texto_dos + 2.86)
+    print(f"Resultado esperado: {suma}")
+    pass
+
+# --- Ejercicio 4 ---
+elif ejercicio == "4":
+    # Dado el texto "programación", imprime cuántas letras tiene
+    # SIN contar vocales acentuadas (ó cuenta como o).
+    texto = "programación"
+    print(f"cuantas letras tiene texto: {len(texto)} letras")
+    print(f"contar las vocales y tambien el str: {len(texto)}")
+    pass
+
+# --- Ejercicio 5 ---
+elif ejercicio == "5":
+    # Imprime el menor número entre -3, 0 y 2 multiplicado por -1
+    # Resultado esperado: 3
+    a = -3
+    b = 0
+    c = 2
+    #numero_menor=()
+    pass
+
+# --- Ejercicio 6 ---
+elif ejercicio == "6":
+    # Dados los valores nombre = "Ana" y edad = 21,
+    # imprime exactamente: Nombre: Ana - Edad: 21 años
+    nombre = "Ana"
+    edad = 21
+    print(f"{nombre} - Edad: {edad}")
+    pass
+
+# --- Ejercicio 7 ---
+elif ejercicio == "7":
+    # Dado el booleano `acceso = True`, imprime:
+    # Acceso permitido si acceso es True, o Acceso denegado si es False.
+    acceso = True
+    if acceso==True:
+        print("Acceso permitido")
+    else
+        print("Acceso denegado")
+    pass
+
+# --- Ejercicio 8 ---
+elif ejercicio == "8":
+    # Dado el string "robot", imprime sus caracteres separados por comas.
+    # Resultado esperado: r,o,b,o,t
+    palabra = "robot"
+    print(",".join(palabra))
+    pass
+
+# --- Ejercicio 9 ---
+elif ejercicio == "9":
+    # Dado el texto "  hola mundo  ", imprime la frase en mayúsculas
+    # sin espacios al inicio ni al final.
+    texto = "  hola mundo  "
+    print((texto.upper()))
+    pass
+
+# --- Ejercicio 10 ---
+elif ejercicio == "10":
+    # Imprime exactamente el siguiente bloque de texto:
+    # Línea 1:\tInicio
+    # Línea 2:\tProceso
+    # Línea 3:\tFin
+    print("Linea 1:\tInicio")
+    print("Linea 2:\tProceso")
+    print("Linea 3:\tFin")
+    pass
+
+# --- Entrada inválida ---
+else:
+    print("Ejercicio inválido. Ingresa un número del 1 al 10.")
+
 """
 
-"""
-agregar eso cuando no este aceptando tus archivos UTF-8
+# 'Day 2: 30 Days of python programming'
 
-Escribir este comando en la terminal ya que si no esta usando UTF-8: chcp 65001
+import math
 
-Agregar eso el archivo de python: # -- coding: utf-8 --
+Nombre='Damian'
+Apellido='Solis'
+Completo='Damian Ezequiel Solis'
+pais='Mexico'
+Ciudad='Aguascalientes'
+año=2025
+Casada=True
+Luz_Encendida=False
 
-"""
-#Exercises - Day 4
+Variable_una_Linea, float_uno, no= 12, 12.7, False
 
-#concatenar la primera cadena 
-Cadena1="TREINTA"+""+"DIAS"+""+"DE"+""+"PYTHON" 
-print(f"Concatenar la primera cadena: {Cadena1}") #Resultado: Treinta Dias de Python
+print(type(Nombre))
+print(type(Apellido))
+print(type(Completo))
+print(type(pais))
+print(type(Ciudad))
+print(type(año))
+print(type(Casada))
+print(type(Luz_Encendida))
+print(type(Variable_una_Linea))
+print(type(float_uno))
+print(type(no))
 
-#Concatenar la segunda cadena
-Cadena2="Coding"+""+"For"+""+"All"
-print(f"Concatenar la segunda cadena: {Cadena2}") #Resultado: Codificacion para Todos
+Longitud_Nombre=len(Nombre)
+Longitud_Apellido=len(Apellido)
 
-Company=Cadena2
-#Ahora como se asigno el valor del Str a empresa
-print(f"imprime la misma cadena 1 de la linea anterior pero almacenada en otra variable {Company} \n") #Resultado: Codificacion para Todos (Coding For All)
+Comparacion_len=(Longitud_Nombre>Longitud_Apellido) or (Longitud_Apellido>Longitud_Nombre) or (Longitud_Nombre==Longitud_Apellido)
+print(f"la mayor longitud entre el apellido y el nombre es = {Comparacion_len} \n")
 
-#ahora se imprimira lo que es la longitud de la 
-#cadena "empresa"
 
-print("La longitud de la cadena \"Empresa\" es de: ", len(Company) ,"Letras \n")
-#Imprime la longitud de la cadena con el metodo len()
+num_one=5
 
-#Cambiar todos los elemntos a mayusculas 
-print(f"Imprime Todo en Mayusculas: {Cadena2.upper()} \n")
+num_two=4
 
+#Respuesta 
 
-#Cambiar todos los elemntos a minusculas
-print(f"Imprime Todo en Minusccuas: {Cadena1.lower()} \n")
+total=num_one+num_two
 
-#------------------------------------------
+diff=num_two-num_one
 
+product=num_two*num_one
 
-# pone solo la primera letra en mayúscula de la cadena
-print(f"ESTE ES EL METODO .CAPITALIZE: {Cadena2.capitalize()} \n")  # Resultado: "Codificación para todos"
+division=num_one/num_two
 
-# Pone la primera letra de cada palabra en mayúscula
-print(f"ESTE ES EL METODO .TITLE: {Cadena2.title()} [pone las primeras letras en mayusculas] \n")       # Resultado: "Codificación Para Todos"
+residuo=num_two%num_one
 
+exp=num_one**num_two
 
-# Invierte las mayúsculas y minúsculas
-print(f"ESTE ES EL METODO .SWAPCASE: {Cadena2.swapcase()} [pone las primeras letras en minusculas]\n")    # Resultado: "cODIFICACIÓN pARA tODOS"
+floor_division=num_one//num_two
 
-# Metodo .slice() para recortar partes de String , list , tulpas 
-"""
-El slicing utiliza la notación [inicio:fin:paso], donde: 
-inicio: El índice del primer elemento que se incluirá en la rebanada (por defecto es 0).
-fin: El índice del primer elemento que NO se incluirá en la rebanada (por defecto es el final de la secuencia).
-paso: El número de elementos que se saltarán entre cada elemento de la rebanada (por defecto es 1).
+Radio_Circle=30.0
+area_of_circle=math.pi*(Radio_Circle**2)
 
-Example: 
+circum_of_circle=(2*math.pi)*Radio_Circle
 
-cadena = "Hola, mundo!"
-# Obtener los primeros 5 caracteres
-CadenaNueva = cadena[0:5]  # o cadena[:5]
-print(rebanada)  # Output: Hola,
+Radio=float(input("Ingersa el Radio:"))
 
-# Obtener los caracteres desde el índice 7 hasta el final
-CadenaNueva = cadena[7:]
-print(rebanada)  # Output: mundo!
+# Esta bien esto pero 
+Calcula_Radio_Entrada_Usuario=(math.pi*Radio)**2
+# Mejor utiliza esto para calculo de radio (para el calculo del area)
+# Calcula_Radio_Entrada_Usuario = math.pi * (Radio ** 2)
 
-# Obtener cada segundo caracter de la cadena
-CadenaNueva = cadena[::2]
-print(rebanada)  # Output: Hla mndo!
+Nombre = input("Ingresa tu nombre: ")
+Apellido=input("Ingresa tu apellido:")
+Pais=input("Ingresa tu pais:")
+edad=input("Ingresa tu edad:")
 
-# Obtener la cadena al revés
-CadenaNueva = cadena[::-1]
-print(rebanada)  # Output: !odnum ,aloH
-"""
-print(f"Utilizacion del metodo (.slice()) para imprimir solo la palabra 'Codificacion' de la cadena [Codificación para todos] = {Cadena2[0:12]}") 
 
 
-#Metodo  CadenaIndex.index(Sub_cadenaIndez) = arroja el numero de la posicion del caracter(char)
-CadenaIndex="Coding For All"
-Sub_CadenaIndex="Coding"
-four='Four'
-print(f"la cadena [CadenaIndex] en que pocicion esta de la [Sub_CadenaIndex] arrojando un valor numerico entero: {CadenaIndex.index(Sub_CadenaIndex)} \n")
-print("[CadenaIndex]=\"Coding For All\" [Sub_CadenaIndex]= \"Coding\" \n")
 
-# el Try-except
-"""
-Es una estructura de control de errores. Se usa para evitar que tu 
-programa se detenga cuando ocurre un error inesperado.
+# Dia 3
 
-📌 ¿Por qué es útil?
-Si usas un método como .index() que lanza un error si no encuentra algo, 
-puedes "atrapar" ese error con try-except y mostrar un mensaje en lugar 
-de que tu programa se caiga.
+edad=21
+float=1.87
+coplex=5j
 
-try: → Aquí pones el código que puede fallar.
+base=float(input("Ingresa la base:"))
+Altura=float(input("Ingresa la altura:"))
 
-Si ese código funciona, se ejecuta normalmente.
+area_triangulo=(0.5*base*Altura)
+print(f"The area of the triangle is: {area_triangulo}")
 
-Si ocurre un error específico, como ValueError, 
-entonces se ejecuta lo que esté dentro de except.
+a=float(input("Ingresa el lado a:"))
+b=float(input("Ingresa el lado b:"))
+c=float(input("Ingresa el lado c:"))
 
-En este caso, si "Four" no está en "Coding For All", 
-se lanza un ValueError.
-"""
-try:
-    print(f"esto es una prueba para mostrar el error en la lectura buscando el str \"Four\" : {CadenaIndex.index(four)} \n")
-    posicion = CadenaIndex.index(four)
-    print(f"El índice de '{four}' en la cadena es: {posicion}")
-except ValueError:
-    print(f"La subcadena '{four}' no se encontro en la cadena.")
+perimetro_traingulo=a+b+c
+print(f"The perimeter of the triangle is: {perimetro_traingulo}")
 
 
-#Metodo CadenaFind.(Sub_cadena) = arroja como resultado la pocision de la comparativa de donde iniciara , Sub_cadena
-"""
-cadena = "Hola, mundo!"
-posicion = cadena.find("mundo")
-print(posicion)  # Imprimirá 6 (porque "mundo" comienza en la posición 6)
 
-posicion_no_encontrada = cadena.find("Python")
-print(posicion_no_encontrada)  # Imprimirá -1
-"""
-Cadenafind="Coding For All"
-Sub_Cadenafind="Coding"
-print(f"la cadena [CadenaFind] en que pocicion esta de la [Sub_CadenaFind] arrojando un valor numerico entero: {Sub_Cadenafind.find(Cadenafind)} \n")
-print(f"esto es una prueba para mostrar el error en la lectura buscando el str \"Four\": {Cadenafind.find('Four')} \n")
-
-#Metodo replace() se utiliza para remplazar la palabra de la cadena a la cual deseas ser modificada 
-RemplazaCadenaIndex='coding'
-Coding=RemplazaCadenaIndex
-print(f"imprime coding en la nueva variable que se almacena en esta pero originaria de [RemplazaCadenaIndex]= {Coding}")
-RemplazaCadenaPython="Python for Everyone"
-print(f"Remplaza [Python for Everyone] por [Python for All] : {RemplazaCadenaPython.replace('Python for Everyone','Python for All')}\n")
 
 
-#Metodo Split() este metodo se aplica para dividir una cadena 
-print(f"Dividir una cadena [Coding For All] utilizando un espacio de separacion : {Cadenafind.split(' ')}\n")
 
-#3 preguntas 
-print(f"¿Cuál es el carácter en el índice 0 de la cadena 'coding for all'? = {Cadenafind[0]} \n")
 
-print(f"¿Cuál es el último índice de la cadena 'coding for all'? = {len(Cadenafind) - 1} \n")
 
-#Aun que me piden la pocicion o indice 10 utilizo el 9 ya que inicia desde 0 a contar
-print(f"¿Qué carácter está en el índice 10 de la cadena 'coding for all'? = {Cadenafind[9]} \n")
 
-
-#Crear un Acronimo para el nombre "Python For Everyone"
-acronimo = "Python for Everyone"
-"""
-acronimo.split()
-➜ Divide la frase en palabras: ["Python", "for", "Everyone"]
-
-[palabra[0] for palabra in ...]
-➜ Toma la primera letra de cada palabra: ["P", "f", "E"]
-
-''.join(...)
-➜ Une esas letras en una sola cadena: "PfE"
-
-.upper()
-➜ Convierte a mayúsculas: "PFE"
-"""
-print(f"El acrónimo para 'Python for Everyone' es: {' '.join([palabra[0] for palabra in acronimo.split()]).upper()} \n")
-
-# metodo .rfinf() para ver la ultima aparicion de l caracter en el strg
-print(f"determinar la pocicion de la primera aparicion de 'C' en la cadena 'Coding For All' : {Cadenafind.find('C')+1} \n") #Le sumo +1 ya que inicia el conteo desde 0
-
-print(f"determinar la primera aparicion de 'F' en 'Coding For All' : {Cadenafind.find('F')} \n") #el metodo .find() es para ver la primera aparicion del caracter
-
-ultima_aparicion="Coding For All People"
-print(f"determinar la ultima aparicion de 'l' en 'Coding For All People': {ultima_aparicion.rfind('l')} \n") #el metodo rfind() es para ver la ultima aparicion del caracter
-
-#Encontarr ya sea con el indice o empleando el metodo .find() para la palabra 'Because'
-Because="No se puede terminar una oracion con \"because\" porque es una conjuncion"
-
-print(f"\nImprimir la oracion sobre la cual se aplicara el metodo 'find' para localizar la palabra 'because':\n ESTO ES EL TEXTO== {Because}\n")
-print("Aplicando el metodo 'find' para encontrar la primera aparicion de la palabra 'because':")
-
-print(f"Emplear el metodo para encontar la primera apaicion de la palabra 'beause' e imprimir la pocicion inicial de dicha palabra correspondiente: {(Because.find('because'))}")
- 
-# Usar el metodo .rindex("porque") busca la última vez que aparece "porque" y devuelve su posición (índice) en la cadena.
-Frase_rindex="No se puede terminar una oración con \"porque\", porque \"porque\" es una conjunción."
-print(f"busca la última vez que aparece \"porque\" con el metodo [.rindex('porque')] = {Frase_rindex.rindex("porque")} numero de la pocision\n")
-
-
-# Elimina la frace de los 'because' de You cannot end a sentence with because because because is a conjunction
-CadenaEliminar="You cannot end a sentence with because because because is a conjunction"
-"""
-frase[inicio:fin] → esto recorta una porción específica del string, 
-desde el índice inicio hasta justo antes del índice fin.
-
-.strip() → se aplica después del slicing, y sirve únicamente para 
-eliminar espacios en blanco (u otros caracteres opcionales) al inicio 
-y final del texto recortado.
-
-"""
-inicioCadena=CadenaEliminar.find('because')
-FinCadena=CadenaEliminar.find('is')
-print(f" Recortar las palbras [because, because, because] de la oracion :  You cannot end a sentence with because because because is a conjunction \n --> Esta es la oracion eliminando la palabra 'Because' == {(CadenaEliminar[:inicioCadena] + CadenaEliminar[FinCadena:]).strip()} \n")
-
-# Encontra la primera ocurrencia de la aparicion de la palabra Because
-print(f"Encontrar la pocicion de la pimera apaicion de la palabra 'because' :{CadenaEliminar.find('because')}")
-
-# Eliminar una frace de una oracion para esto es el metodo .replace()
-print(f"Elimina la frase 'because because because' de la oración: \n Original: {CadenaEliminar}")
-print(f"Modificada: {CadenaEliminar.replace('because because because','').strip()}\n")
-
-# ¿'Coding For All' comienza con una subcadena Codificación?
-print ("¿Empieza con 'Coding'? →", "Coding For All".startswith("Coding"))
-
-# ¿'Coding For All' termina con una subcadena de codificación?
-print("¿Termina con 'coding'? →", "Coding For All".endswith("coding"))
-
-# Eliminar espacios finales: 'Codificación para todos'
-cadena_con_espacios = '   Coding For All      '
-print("Sin espacios al inicio y final:", cadena_con_espacios.strip())
-
-# isidentifier() verificar si una cadena de texto es un identificador válido.
-"""
-print("nombre_variable".isidentifier())  # True
-print("1variable".isidentifier())        # False (empieza con número)
-print("variable-1".isidentifier())       # False (contiene un guion)
-print("def".isidentifier())              # True (es válido, pero es palabra clave)
-print("_oculto".isidentifier())          # True
-"""
-print("¿'30DaysOfPython' es un identificador válido?", "30DaysOfPython".isidentifier())
-print("¿'thirty_days_of_python' es un identificador válido?", "thirty_days_of_python".isidentifier())
-
-
-# .join() unir todos los elementos de una lista de cadenas (strings) 
-# en una sola cadena, usando un separador que tú eliges
-librerias = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
-print("Unidas con '# ':", '# '.join(librerias))
-
-
-# New line escape (\n) ==> Nueva línea de escape
-print("I am enjoying this challenge.\nI just wonder what is next.")
-
-
-# secuencia de escape de tabulación (\t)
-print("Name\tAge\tCountry\tCity")
-print("Asabeneh\t250\tFinland\tHelsinki")
-
-
-# Formato de cadena (área del círculo)
-radius = 10
-area = 3.14 * radius ** 2
-print("The area of a circle with radius {} is {:.0f} meters square.".format(radius, area))
-
-"""
-{} inserta el valor de radius tal cual.
-
-{:.0f} inserta area como número decimal con 0 decimales (redondeado).
-
-.format(radius, area) reemplaza esos marcadores con las variables.
-
-Ejemplo si radius = 5 y area = 78.54, la salida será:
-
-
-a)  la explicación resumida de .format():
-
-.format() es un método de cadenas en Python que te permite 
-insertar valores dentro de un texto, reemplazando los {} por los 
-argumentos que pases.
-
-Por ejemplo:
-
-python
-Copiar
-Editar
-"Hola, {}".format("Mundo")
-produce:
-
-Copiar
-Editar
-Hola, Mundo
-"""
-
-# Operaciones matemáticas con formato de cadena
-a, b = 8, 6
-print(f"{a} + {b} = {a + b}")
-print(f"{a} - {b} = {a - b}")
-print(f"{a} * {b} = {a * b}")
-print(f"{a} / {b} = {a / b:.2f}")
-print(f"{a} % {b} = {a % b}")
-print(f"{a} // {b} = {a // b}")
-print(f"{a} ** {b} = {a ** b}")
