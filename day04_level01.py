@@ -1,222 +1,236 @@
-"""
-# ================================================================
-# 🚨 Reglas de la evaluación (LEER ANTES DE COMENZAR)
-# ================================================================
-# - La evaluación debe realizarse de forma individual.
-# - Está estrictamente prohibido el plagio:
-#     - No copies código de otros compañeros.
-#     - No busques soluciones en internet.
-#     - No uses IA como ChatGPT, Copilot u otras herramientas externas.
-# - Solo puedes tener abierto:
-#     - Este archivo en Codespaces (VS Code en el navegador)
-#     - El repositorio de GitHub de esta tarea.
-# - Si se detecta copia o incumplimiento de estas reglas,
-#   la calificación será cero.
-# ================================================================
-
-# Ingresa el número del ejercicio que deseas ejecutar (del 1 al 10):
-ejercicio = input().strip()
-
-# --- Ejercicio 1 ---
-if ejercicio == "1":
-    # Imprime una línea de saludo usando concatenación de strings.
-    # Debe decir exactamente: ¡Bienvenido, estudiante de Python!
-    parte1 = "¡Bienvenido"
-    parte2 = "estudiante de Python!"
-    
-    print(f"concatenación de strings: {parte1+parte2}")
-    pass
-
-# --- Ejercicio 2 ---
-elif ejercicio == "2":
-    # Calcula el cuadrado de la suma de 3 y 5.
-    # Resultado esperado: 64
-    a = 3
-    b = 5
-    Cuadrado=((a+b)**2)
-    print(f"Resultado eperado: {cuadrado}")
-    pass
-
-# --- Ejercicio 3 ---
-elif ejercicio == "3":
-    # Convierte el texto "3.14" a tipo float y súmale 2.86
-    # Resultado esperado: 6.0
-    texto = "3.14"
-    texto_dos=float(texto)
-    suma = (texto_dos + 2.86)
-    print(f"Resultado esperado: {suma}")
-    pass
-
-# --- Ejercicio 4 ---
-elif ejercicio == "4":
-    # Dado el texto "programación", imprime cuántas letras tiene
-    # SIN contar vocales acentuadas (ó cuenta como o).
-    texto = "programación"
-    print(f"cuantas letras tiene texto: {len(texto)} letras")
-    print(f"contar las vocales y tambien el str: {len(texto)}")
-    pass
-
-# --- Ejercicio 5 ---
-elif ejercicio == "5":
-    # Imprime el menor número entre -3, 0 y 2 multiplicado por -1
-    # Resultado esperado: 3
-    a = -3
-    b = 0
-    c = 2
-    #numero_menor=()
-    pass
-
-# --- Ejercicio 6 ---
-elif ejercicio == "6":
-    # Dados los valores nombre = "Ana" y edad = 21,
-    # imprime exactamente: Nombre: Ana - Edad: 21 años
-    nombre = "Ana"
-    edad = 21
-    print(f"{nombre} - Edad: {edad}")
-    pass
-
-# --- Ejercicio 7 ---
-elif ejercicio == "7":
-    # Dado el booleano `acceso = True`, imprime:
-    # Acceso permitido si acceso es True, o Acceso denegado si es False.
-    acceso = True
-    if acceso==True:
-        print("Acceso permitido")
-    else
-        print("Acceso denegado")
-    pass
-
-# --- Ejercicio 8 ---
-elif ejercicio == "8":
-    # Dado el string "robot", imprime sus caracteres separados por comas.
-    # Resultado esperado: r,o,b,o,t
-    palabra = "robot"
-    print(",".join(palabra))
-    pass
-
-# --- Ejercicio 9 ---
-elif ejercicio == "9":
-    # Dado el texto "  hola mundo  ", imprime la frase en mayúsculas
-    # sin espacios al inicio ni al final.
-    texto = "  hola mundo  "
-    print((texto.upper()))
-    pass
-
-# --- Ejercicio 10 ---
-elif ejercicio == "10":
-    # Imprime exactamente el siguiente bloque de texto:
-    # Línea 1:\tInicio
-    # Línea 2:\tProceso
-    # Línea 3:\tFin
-    print("Linea 1:\tInicio")
-    print("Linea 2:\tProceso")
-    print("Linea 3:\tFin")
-    pass
-
-# --- Entrada inválida ---
-else:
-    print("Ejercicio inválido. Ingresa un número del 1 al 10.")
-
-"""
 
 # 'Day 2: 30 Days of python programming'
+ # -------------------------------------------
+# Ejercicio 1: Concatenar cadenas
+# -------------------------------------------
 
-import math
+texto1 = 'Thirty'
+texto2 = 'Days'
+texto3 = 'Of'
+texto4 = 'Python'
 
-Nombre='Damian'
-Apellido='Solis'
-Completo='Damian Ezequiel Solis'
-pais='Mexico'
-Ciudad='Aguascalientes'
-año=2025
-Casada=True
-Luz_Encendida=False
+frase1 = texto1 + ' ' + texto2 + ' ' + texto3 + ' ' + texto4
+print(frase1)
 
-Variable_una_Linea, float_uno, no= 12, 12.7, False
+# -------------------------------------------
+# Ejercicio 2: Concatenar 'Coding For All'
+# -------------------------------------------
 
-print(type(Nombre))
-print(type(Apellido))
-print(type(Completo))
-print(type(pais))
-print(type(Ciudad))
-print(type(año))
-print(type(Casada))
-print(type(Luz_Encendida))
-print(type(Variable_una_Linea))
-print(type(float_uno))
-print(type(no))
+frase2 = 'Coding' + ' ' + 'For' + ' ' + 'All'
+print(frase2)
 
-Longitud_Nombre=len(Nombre)
-Longitud_Apellido=len(Apellido)
+# -------------------------------------------
+# Ejercicio 3: Declarar variable company
+# -------------------------------------------
 
-Comparacion_len=(Longitud_Nombre>Longitud_Apellido) or (Longitud_Apellido>Longitud_Nombre) or (Longitud_Nombre==Longitud_Apellido)
-print(f"la mayor longitud entre el apellido y el nombre es = {Comparacion_len} \n")
+company = 'Coding For All'
+print(company)
 
+# -------------------------------------------
+# Ejercicio 4: Longitud de company
+# -------------------------------------------
 
-num_one=5
+print(len(company))
 
-num_two=4
+# -------------------------------------------
+# Ejercicio 5: Cambiar a mayúsculas
+# -------------------------------------------
 
-#Respuesta 
+print(company.upper())
 
-total=num_one+num_two
+# -------------------------------------------
+# Ejercicio 6: Cambiar a minúsculas
+# -------------------------------------------
 
-diff=num_two-num_one
+print(company.lower())
 
-product=num_two*num_one
+# -------------------------------------------
+# Ejercicio 7: Capitalize, title, swapcase
+# -------------------------------------------
 
-division=num_one/num_two
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
 
-residuo=num_two%num_one
+# -------------------------------------------
+# Ejercicio 8: Cortar la primera palabra
+# -------------------------------------------
 
-exp=num_one**num_two
+print(company[7:])
 
-floor_division=num_one//num_two
+# -------------------------------------------
+# Ejercicio 9: Comprobar si contiene "Coding"
+# -------------------------------------------
 
-Radio_Circle=30.0
-area_of_circle=math.pi*(Radio_Circle**2)
+print('Coding' in company)
+print(company.index('Coding'))
+print(company.find('Coding'))
 
-circum_of_circle=(2*math.pi)*Radio_Circle
+# -------------------------------------------
+# Ejercicio 10: Reemplazar 'Coding' por 'Python'
+# -------------------------------------------
 
-Radio=float(input("Ingersa el Radio:"))
+print(company.replace('Coding', 'Python'))
 
-# Esta bien esto pero 
-Calcula_Radio_Entrada_Usuario=(math.pi*Radio)**2
-# Mejor utiliza esto para calculo de radio (para el calculo del area)
-# Calcula_Radio_Entrada_Usuario = math.pi * (Radio ** 2)
+# -------------------------------------------
+# Ejercicio 11: Reemplazar 'Python for Everyone' a 'Python for All'
+# -------------------------------------------
 
-Nombre = input("Ingresa tu nombre: ")
-Apellido=input("Ingresa tu apellido:")
-Pais=input("Ingresa tu pais:")
-edad=input("Ingresa tu edad:")
+frase3 = 'Python for Everyone'
+print(frase3.replace('Everyone', 'All'))
 
+# -------------------------------------------
+# Ejercicio 12: Split con espacio
+# -------------------------------------------
 
+print(company.split())
 
+# -------------------------------------------
+# Ejercicio 13: Split con coma
+# -------------------------------------------
 
-# Dia 3
+empresas = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(empresas.split(", "))
 
-edad=21
-float=1.87
-coplex=5j
+# -------------------------------------------
+# Ejercicio 14: Primer caracter de 'Coding For All'
+# -------------------------------------------
 
-base=float(input("Ingresa la base:"))
-Altura=float(input("Ingresa la altura:"))
+print(company[0])
 
-area_triangulo=(0.5*base*Altura)
-print(f"The area of the triangle is: {area_triangulo}")
+# -------------------------------------------
+# Ejercicio 15: Último índice de 'Coding For All'
+# -------------------------------------------
 
-a=float(input("Ingresa el lado a:"))
-b=float(input("Ingresa el lado b:"))
-c=float(input("Ingresa el lado c:"))
+print(len(company)-1)
 
-perimetro_traingulo=a+b+c
-print(f"The perimeter of the triangle is: {perimetro_traingulo}")
+# -------------------------------------------
+# Ejercicio 16: Caracter en índice 10
+# -------------------------------------------
 
+print(company[10])
 
+# -------------------------------------------
+# Ejercicio 17: Acrónimo de 'Python For Everyone'
+# -------------------------------------------
 
+pfe = 'Python For Everyone'
+acronimo_pfe = ''.join([palabra[0] for palabra in pfe.split()])
+print(acronimo_pfe)
 
+# -------------------------------------------
+# Ejercicio 18: Acrónimo de 'Coding For All'
+# -------------------------------------------
 
+cfa = 'Coding For All'
+acronimo_cfa = ''.join([palabra[0] for palabra in cfa.split()])
+print(acronimo_cfa)
 
+# -------------------------------------------
+# Ejercicio 19: Posición de la primera C
+# -------------------------------------------
 
+print(company.index('C'))
 
+# -------------------------------------------
+# Ejercicio 20: Posición de la F
+# -------------------------------------------
 
+print(company.index('F'))
+
+# -------------------------------------------
+# Ejercicio 21: Última posición de 'l' en 'Coding For All People'
+# -------------------------------------------
+
+frase4 = 'Coding For All People'
+print(frase4.rfind('l'))
+
+# -------------------------------------------
+# Ejercicio 22: Primera posición de 'because'
+# -------------------------------------------
+
+frase5 = 'You cannot end a sentence with because because because is a conjunction'
+print(frase5.find('because'))
+
+# -------------------------------------------
+# Ejercicio 23: Última posición de 'because'
+# -------------------------------------------
+
+print(frase5.rindex('because'))
+
+# -------------------------------------------
+# Ejercicio 24: Cortar 'because because because'
+# -------------------------------------------
+
+inicio = frase5.find('because because because')
+fin = inicio + len('because because because')
+print(frase5[inicio:fin])
+
+# -------------------------------------------
+# Ejercicio 25: ¿Comienza con 'Coding'?
+# -------------------------------------------
+
+print(company.startswith('Coding'))
+
+# -------------------------------------------
+# Ejercicio 26: ¿Termina con 'coding'?
+# -------------------------------------------
+
+print(company.endswith('coding'))
+
+# -------------------------------------------
+# Ejercicio 27: Eliminar espacios en blanco
+# -------------------------------------------
+
+espacios = '   Coding For All      '
+print(espacios.strip())
+
+# -------------------------------------------
+# Ejercicio 28: isidentifier
+# -------------------------------------------
+
+print('30DaysOfPython'.isidentifier())   # False
+print('thirty_days_of_python'.isidentifier())  # True
+
+# -------------------------------------------
+# Ejercicio 29: Unir lista de librerías con #
+# -------------------------------------------
+
+librerias = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(' # '.join(librerias))
+
+# -------------------------------------------
+# Ejercicio 30: Separar con nueva línea
+# -------------------------------------------
+
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+# -------------------------------------------
+# Ejercicio 31: Separar con tabulación
+# -------------------------------------------
+
+print("Name\tAge\tCountry\tCity")
+print("Asabeneh\t250\tFinland\tHelsinki")
+
+# -------------------------------------------
+# Ejercicio 32: Formateo área de un círculo
+# -------------------------------------------
+
+radio = 10
+area = 3.14 * radio ** 2
+print("The area of a circle with radius {} is {} meters square.".format(radio, int(area)))
+
+# -------------------------------------------
+# Ejercicio 33: Operaciones usando format
+# -------------------------------------------
+
+a = 8
+b = 6
+
+print("{} + {} = {}".format(a, b, a+b))
+print("{} - {} = {}".format(a, b, a-b))
+print("{} * {} = {}".format(a, b, a*b))
+print("{} / {} = {:.2f}".format(a, b, a/b))
+print("{} % {} = {}".format(a, b, a%b))
+print("{} // {} = {}".format(a, b, a//b))
+print("{} ** {} = {}".format(a, b, a**b))
